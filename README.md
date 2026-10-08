@@ -3,7 +3,7 @@ This package provides a python version of the Event Coincidence Analysis, based 
 
 ## **Input dataset**
 
-Historic natural hazard and disease outbreak records during 1950 and 2024 are retrieved from EM-DAT. An addtional EM-DAT dataset is used to provide the administrative 1 information of these events from 2000 onwards. These data can be accessed via https://www.emdat.be/.
+Historic natural hazard and disease outbreak records during 1950 and 2024 are retrieved from EM-DAT. An addtional EM-DAT dataset is used to provide the administrative 1 information for events from 2000 onwards. These data can be accessed via https://www.emdat.be/.
 
 ## **Scripts**
 
