@@ -7,24 +7,21 @@ Historic natural hazard and disease outbreak records during 1950 and 2024 are re
 
 **Scripts**
 
-preprocess
-
+*preprocess*
 combining_emdat_admin1_datasets.py-->combining the EM-DAT (1950-2024) with the additonal dataset containing detailed administrative 1 information for events from 2000 onwards
 hazard_epidemic_extracation.py-->extracting natural hazard and disease outbreak records per country from the combined EM-DAT dataset
 multi_hazard_identification.py-->identifying single-hazard and multi-hazard events per country
 
-eca
-
+*eca*
 coincidence_rate.py-->calculating the precursor and triggering rates
 event_series.py-->converting discrete event records to binary event time series at a monthly time step
 significant_test.py-->testing the significance of calculated rate, including 1) poisson significance test; and 2) surrogate event significance test
 run_analysis.py-->running the event coincidence analysis
 
-postprocess
+*postprocess*
 agg_global_results-->showing global results at a country scale for each natural hazard - disease outbreak combination
 
-plot (for producing figures in the manuscript)
-
+*plot (for producing figures in the manuscript)*
 global_lag_figure.py-->plotting global aggregated precursor rates for each natural hazard - disease outbreak combination
 identify_most_sig_lag.py-->identifying the first significant lag and plotting a global figure
 multi_versus_single.py-->plotting the relative difference in single and multi precursor rates per country
