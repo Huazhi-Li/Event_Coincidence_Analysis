@@ -7,28 +7,46 @@ Historic natural hazard and disease outbreak records during 1950 and 2024 are re
 
 **Scripts**
 
-*preprocess*
+### Preprocess
 
-combining_emdat_admin1_datasets.py-->combining the EM-DAT (1950-2024) with the additonal dataset containing detailed administrative 1 information for events from 2000 onwards
-hazard_epidemic_extracation.py-->extracting natural hazard and disease outbreak records per country from the combined EM-DAT dataset
-multi_hazard_identification.py-->identifying single-hazard and multi-hazard events per country
+- `combining_emdat_admin1_datasets.py`  
+  Combining the EM-DAT dataset (1950–2024) with an additional dataset containing detailed administrative level-1 information for events from 2000 onwards.
 
-*eca*
+- `hazard_epidemic_extracation.py`  
+  Extracting natural hazard and disease outbreak records for each country from the combined EM-DAT dataset.
 
-coincidence_rate.py-->calculating the precursor and triggering rates
-event_series.py-->converting discrete event records to binary event time series at a monthly time step
-significant_test.py-->testing the significance of calculated rate, including 1) poisson significance test; and 2) surrogate event significance test
-run_analysis.py-->running the event coincidence analysis
+- `multi_hazard_identification.py`  
+  Identifying single-hazard and multi-hazard events for each country.
 
-*postprocess*
+### ECA (Event Coincidence Analysis)
 
-agg_global_results-->showing global results at a country scale for each natural hazard - disease outbreak combination
+- `coincidence_rate.py`  
+  Calculating precursor and trigger coincidence rates.
 
-*plot (for producing figures in the manuscript)*
+- `event_series.py`  
+  Converting discrete event records into binary event time series at a monthly resolution.
 
-global_lag_figure.py-->plotting global aggregated precursor rates for each natural hazard - disease outbreak combination
-identify_most_sig_lag.py-->identifying the first significant lag and plotting a global figure
-multi_versus_single.py-->plotting the relative difference in single and multi precursor rates per country
+- `significant_test.py`  
+  Testing the statistical significance of the calculated coincidence rates using (1) a Poisson significance test and (2) a surrogate event significance test.
+
+- `run_analysis.py`  
+  Running the event coincidence analysis.
+
+### Postprocess
+
+- `agg_global_results`  
+  Aggregating and presenting global results at the country level for each natural hazard–disease outbreak combination.
+
+### Plot (Figures in the manuscript)
+
+- `global_lag_figure.py`  
+  Plotting globally aggregated precursor coincidence rates for each natural hazard–disease outbreak combination.
+
+- `identify_most_sig_lag.py`  
+  Identifying the first statistically significant lag and visualizing the results on a global map.
+
+- `multi_versus_single.py`  
+  Plotting the relative differences in precursor coincidence rates between single-hazard and multi-hazard events for each country.
 
 **References**
 
